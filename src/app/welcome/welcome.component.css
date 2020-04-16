@@ -1,0 +1,15 @@
+.proceed-to-login-card{
+    cursor: pointer;
+    border-radius : 5px;
+    border: 2px dotted rgb(44, 155, 210) !important;
+    width: 50%;
+    padding : 30px;
+    margin: 0 auto;
+    background: white !important;
+    margin-top: 100px;
+    color: rgb(44, 155, 210)
+}
+.proceed-to-login-card:hover{
+   color: white;
+    background: rgb(44, 155, 210) !important;
+}

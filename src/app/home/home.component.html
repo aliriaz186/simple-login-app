@@ -1,0 +1,23 @@
+<div class="p-5">
+    <span class="font-weight-bold" style="font-size: 20px">User Logs</span>
+    <span style="float: right">
+        <button class="btn btn-primary" (click)="openCreateLog()" *ngIf="!createLog">Add Log</button>
+    </span>
+    <app-create-log *ngIf="createLog" [userLogsList]='userLogs'></app-create-log>
+    <table class="table mt-4">
+        <thead>
+            <th>#</th>
+            <th>Type</th>
+            <th>User ID</th>
+            <th>TimeStamp</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let log of userLogs; let i = index">
+                <td>{{i + 1}}</td>
+                <td>{{log.type}}</td>
+                <td>{{log.userId}}</td>
+                <td>{{log.timeStamp}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
